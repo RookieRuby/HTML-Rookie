@@ -1,0 +1,41 @@
+div{
+	border:1px solid #999;
+	padding:20px;
+	background-color: #ffffff;
+}
+
+.pic{
+	width: 80px;
+	height: 80px;
+}
+
+#container{
+	background-color: #eee;
+	margin:20px;
+	overflow: hidden;
+}
+
+#left{
+	float: left;
+	font-size: 15px;
+	width: 160px;
+}
+
+#left p{
+	float: right;
+	margin:0;
+}
+#middle{
+	font-size: 10px;
+	margin:0 140px 0 220px;
+}
+
+#right{
+	float: right;
+	width: 80px;
+	padding-bottom: 10px；
+}
+
+#right img{
+	margin-bottom: 10px;
+}
