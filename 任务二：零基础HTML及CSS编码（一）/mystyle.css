@@ -4,10 +4,14 @@ body{
 }
 
 /*设置导航栏样式 */
-#header{
-	
+header{
 	padding-left:30px;
 	background-color:#008B8B;
+}
+
+nav{
+	float: right;
+	overflow: hidden;
 }
 
 /*导航栏图片样式 使图片垂直居中显示*/
