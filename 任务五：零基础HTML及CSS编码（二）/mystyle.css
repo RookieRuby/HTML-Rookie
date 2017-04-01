@@ -148,6 +148,7 @@ nav{
 	padding:20px 20px 20px 20px;
 	background-color: #fff;
 	outline:2px outset #d3d3d3;
+
 }
 
 #side h2{
@@ -162,18 +163,20 @@ form{
 
 /*标签样式：设置表单对齐 行高 文字右对齐*/
 label{
+	display: inline-block;
 	float: left;
 	width: 100px;
-	line-height: 30px;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding: 0 10px;
 	text-align: right;
+	line-height: 25px;
 }
 
-/*表单样式*/
-input{
-	vertical-align:middle;
+label[for="sex"],label[for="city"],label[for="hobby"]{
+	margin-top: -4px;
+	margin-bottom: 5px;
 }
+/*表单样式*/
+
 
 form p{
 	padding-left: 120px;
@@ -185,28 +188,23 @@ form br{
 	clear: left;
 }
 
-
 /*电子邮件与密码输入框格式*/
-#address,#passwd_one,#passwd_two{
+input[type="text"]{
 	width: 120px;
-	height: 15px;
 	border: 1px solid #d3d3d3;
-	margin-bottom: -10px;
 }
 
-input,form span,select{
-	display: inline-block;
-	margin-top: 5px;
+input[type="radio"],input[type="checkbox"]{
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-bottom: 1px;
 }
 
 textarea{
 	display: inline-block;
 	height: 50px;
-	margin-top: 10px;
+	margin-top: 5px;
 }
-
-
-
 
 /*提交按钮样式*/
 #subutton{
@@ -215,7 +213,7 @@ textarea{
 	border: 0px;
 	border-radius: 10px;
 	background-color: #008B8B;
-	color: #ffffff;
+	color: #fff;
 	font-size: 1em;
 
 }
