@@ -1,0 +1,95 @@
+body{
+	background-color: #000;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+div{
+	margin:0 auto;
+}
+
+.main-body{
+	background-color: #fff;
+	width: 400px;
+	padding: 30px 10px;
+}
+
+table{
+	text-align: left;
+	font-family: "微软雅黑";
+	margin: 0 auto;
+}
+
+.title{
+	background-color: #000;
+	color: #fff;
+}
+
+table tr:nth-child(odd):not(.title) {
+	background-color: #ccc;
+}
+
+table tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){
+	color: #ff0000;
+}
+
+.frame{
+	width: 100px;
+	height: 20px;
+	border:1px solid #d3d3d3;
+	margin-top:80px;
+	transition:transform .3s;
+}
+
+.frame:hover{
+	transform: scale(2,1.5);
+	border-radius: 2px;
+	box-shadow:0 0 5px 2px #00aaff; 
+}
+
+.container{
+	width: 300px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	background-color: #00aa00;
+}
+
+.flexbox{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	line-height: 30px;
+	margin-left: -2px;
+	background-color:#d3d3d3;
+	opacity: 0.7;
+}
+
+.flexbox span{
+	color: #fff;
+	opacity: 1;
+	font-weight: bold;
+}
+
+.box{
+	background-color: #0000ff;
+	height: 100px;
+	margin-left: 0;
+	animation: fill 3s;
+}
+
+.box-wrap{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+@keyframes fill{
+	from{width: 0;}
+	to{width: 300px;}
+}
